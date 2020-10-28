@@ -53,6 +53,7 @@ dependencies {
     // compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     // compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '2.4.1'
     compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
 
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>Secure</title>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <h1>User Page</h1>
+    <p>This is a page for user, but you can access the secured pages after authenticating.</p>
+    <ul>
+        <li>If you are administrator, you can access the <a href="/admin" th:href="@{/admin}">admin page.</a></li>
+        <p><a href="/" th:href="@{/}">Back to home page</a></p>
+    </ul>
+</div>
+</body>
+</html>

@@ -3,14 +3,16 @@
       xmlns:th="http://www.thymeleaf.org"
       layout:decorate="~{fragments/layout}">
 <head>
-    <title>Home</title>
+    <title>Index</title>
 </head>
 <body>
 <div layout:fragment="content" th:remove="tag">
-    <h1>This is main page.</h1>
-    <p><a href="/" th:href="@{/user}">user page</a></p>
-    <p><a href="/" th:href="@{/admin}">admin page</a></p>
-
+    <h1>Admin Page</h1>
+    <p>This is a page only for administrator.</p>
+    <ul>
+        <li>Go to the <a href="/user" th:href="@{/user}">user page</a></li>
+        <p><a href="/" th:href="@{/}">Back to home page</a></p>
+    </ul>
 </div>
 </body>
 </html>

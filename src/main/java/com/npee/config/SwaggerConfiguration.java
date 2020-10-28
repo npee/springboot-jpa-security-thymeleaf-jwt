@@ -37,18 +37,18 @@ public class SwaggerConfiguration {
     @Bean
     public Docket swaggerApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(swaggerInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("com.softlabs.care.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.npee.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .useDefaultResponseMessages(false);
     }
 
     public ApiInfo swaggerInfo() {
-        return new ApiInfoBuilder().title("우리동네케어 API Documentation")
+        return new ApiInfoBuilder().title("NPEE's Boilerplate API Documentation")
                 .description("Server API Docs")
                 .license("Npee")
                 // TODO: Licence URL 수정(Optional)
-                .licenseUrl("https://github.com/npee/npee_backend_template")
+                .licenseUrl("https://github.com/npee/")
                 .version("v1.0")
                 .build();
     }
