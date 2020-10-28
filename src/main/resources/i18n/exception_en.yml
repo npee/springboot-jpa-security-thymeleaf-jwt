@@ -1,0 +1,53 @@
+# exception_en.yml
+unKnown:
+  code: "-9999"
+  message : "An unknown error has occurred."
+userNotExists:
+  code: "-1000"
+  message: "The user does NOT exist."
+signinFailed:
+  code: "-1001"
+  message: "Your ID or PASSWORD is NOT correct."
+entryPointException:
+  code: "-1002"
+  message: "You do NOT have permission to access this resource."
+accessDenied:
+  code: "-1003"
+  message: "A resource that can not be accessed with the privileges it has."
+commumicationError:
+  code: "-1004"
+  message: "An error occurred during communication."
+userExists:
+  code: "-1005"
+  message: "The user already exists."
+duplicatedId:
+  code: "-1006"
+  message: "This ID already exists."
+invalidUserCode:
+  code: "-1007"
+  message: "The user code is invalid."
+illegalAccess:
+  code: "-1009"
+  message: "This is wrong approach."
+orderNotExists:
+  code: "-2000"
+  message: "The order does NOT exist."
+approvedOrder:
+  code: "-2005"
+  message: "The order already approved."
+invalidOrderType:
+  code: "-2007"
+  message: "The order type is invalid."
+candidateNotExists:
+  code: "-3000"
+  message: "The candidate does NOT exists"
+invalidCandidate:
+  code: "-3007"
+  message: "The order already applied."
+
+missingFile:
+  code: "-9001"
+  message: "Required request part is not present."
+storageException:
+  code: "-9002"
+  message: "Cannot access for file storage."

@@ -1,0 +1,53 @@
+# exception_ko.yml
+unKnown:
+  code: "-9999"
+  message: "알 수 없는 오류가 발생했습니다"
+userNotExists:
+  code: "-1000"
+  message: "존재하지 않는 회원입니다"
+signinFailed:
+  code: "-1001"
+  message: "아이디 또는 비밀번호가 정확하지 않습니다."
+entryPointException:
+  code: "-1002"
+  message: "해당 리소스에 대한 접근 권한이 없습니다."
+accessDenied:
+  code: "-1003"
+  message: "보유한 권한으로 접근할 수 없는 리소스 입니다"
+communicationError:
+  code: "-1004"
+  message: "통신 중 오류가 발생하였습니다."
+userExists:
+  code: "-1005"
+  message: "이미 존재하는 회원입니다."
+duplicatedId:
+  code: "-1006"
+  message: "이미 존재하는 아이디입니다."
+invalidUserCode:
+  code: "-1007"
+  message: "유효하지 않은 회원코드입니다."
+illegalAccess:
+  code: "-1009"
+  message: "잘못된 접근입니다."
+orderNotExists:
+  code: "-2000"
+  message: "존재하지 않는 돌봄요청입니다."
+approvedOrder:
+  code: "-2005"
+  message: "이미 승인된 요청입니다."
+invalidOrderType:
+  code: "-2007"
+  message: "유효하지 않은 요청형태입니다."
+candidateNotExists:
+  code: "-3000"
+  message: "존재하지 않는 지원요청입니다."
+invalidCandidate:
+  code: "-3007"
+  message: "이미 지원한 돌봄요청입니다."
+
+missingFile:
+  code: "-9001"
+  message: "업로드 파일이 존재하지 않습니다."
+storageException:
+  code: "-9002"
+  message: "파일 저장소에 접근할 수 없습니다."
