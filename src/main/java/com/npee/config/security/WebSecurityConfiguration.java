@@ -1,6 +1,7 @@
 package com.npee.config.security;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -38,7 +39,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers(STATIC).antMatchers(AUTH).antMatchers(SWAGGER);
+        // web.ignoring().antMatchers(STATIC).antMatchers(AUTH).antMatchers(SWAGGER);
+        web.ignoring().antMatchers(AUTH).antMatchers(SWAGGER);
+        web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
     }
 
     @Override
